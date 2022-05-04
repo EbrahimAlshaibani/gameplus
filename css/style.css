@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.4s;
+
+}
+body{
+    background: fixed;
+    background: radial-gradient(#252b6d,50%,#111433);
+    background-repeat: no-repeat;
+
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.hero header .logo h2 a{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px ;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+nav ul li.btn a{
+    background: transparent;
+    color: white;
+    border: 1px solid #929bff;
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: black;
+    background: white;
+}
+.content{
+    padding-top: 140px;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.content .main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.content .main-text h1{
+    font-size: 100px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
+    font-family: 'Permanent Marker', cursive;
+}
+.content .main-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.content .main-text p{
+    max-width: 100%;
+    width: 480px;
+    line-height: 1.8;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 50px;
+}
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.content .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid #929bff;
+    background: transparent;
+    color: white;
+}
+.content .main-text a.cta{
+    border: 1px solid #929bff;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+}
+.content .main-text a.cta i{
+    margin-right: 12px;
+}
+.content .main-text a.cta:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+}
+
+.content .social{
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+    padding-bottom: 40px;
+}
+
+.content .social a{
+   display: inline-block;
+   color: #929bff;
+   margin-right: 25px;
+   font-size: 24px;
+}
+.content .social a:hover{
+    transform: scale(1.2);
+    color: white;
+ }
+ .image{
+     position: absolute;
+     width: 100%;
+     height: 85%;
+     bottom: 0;
+     right: 0;
+     text-align: right;
+ }
+ .image img{
+     height: 100%;
+ }
+
+ 
+.gallery {
+    height: 50%;
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+ 
+
+
+  
+main section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0;
+  }
+  main section .carousel-container {
+    width: 100%;
+    height: 40rem;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.375rem;
+  }
+  main section .carousel-container .item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    animation: fade 0.3s ease-in-out;
+  }
+  main section .carousel-container .item .numbertext {
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 0.9375rem;
+    font-size: 0.875rem;
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  main section .carousel-container .item .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  main section .carousel-container .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main section .carousel-container .item .text {
+    width: 100%;
+    padding: 0.625rem 0.9375rem;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  main section .carousel-container .item .text .title {
+    margin: 0 0 0 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  main section .carousel-container .prev,
+  main section .carousel-container .next {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3125rem;
+    position: absolute;
+    top: calc(50% - 1rem);
+    user-select: none;
+    font-size: 1rem;
+    color: #f2f2f2;
+    border-radius: 50%;
+    transition: 0.6s ease;
+  }
+  main section .carousel-container .prev:focus, main section .carousel-container .prev:hover,
+  main section .carousel-container .next:focus,
+  main section .carousel-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  main section .carousel-container .prev {
+    left: 0.8rem;
+  }
+  main section .carousel-container .next {
+    right: 0.8rem;
+  }
+  main section .carousel-container .dots {
+    padding: 0.9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main section .carousel-container .dots .dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    margin: 0 0;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #bbb;
+    transition: background-color 0.6s ease;
+  }
+  main section .carousel-container .dots .dot:focus, main section .carousel-container .dots .dot:hover {
+    background-color: #717171;
+  }
+  .has-dflex-center h1{
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-size: 62px;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.glow-on-hover {
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    color: #000;
+    border-radius: 30px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #252b6d;
+    color: #000;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.glow-on-hover2 {
+    content: '';
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    
+
+}
+
+.glow-on-hover2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    color: #000;
+   
+}
+
+.glow-on-hover2:active {
+    color: #000
+}
+
+.glow-on-hover2:active:after {
+    background: transparent;
+}
+
+.glow-on-hover2:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #252b6d;
+    color: #000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
